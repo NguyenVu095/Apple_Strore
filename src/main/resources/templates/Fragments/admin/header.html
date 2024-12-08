@@ -20,7 +20,9 @@
     <div th:fragment="header" style="height: 60px" id="wrapper__header" >
         <div id="wrapper__logo__manage">
             <div id="wrapper__logo">
+                <a href="/admin/viewAll">
                 <img th:src="@{../../images/logologoAppleWorld.png}" style="height: 40px">
+                </a>
             </div>
             <div id="wrapper__manage">
                 <a th:href="viewAll" class="link__to__view">
@@ -58,6 +60,11 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </a>
+                <a th:href="statistic" class="link__to__view">
+                    <div id=" " class="manage__item">
+                        <h3 class="manage__name" id="">Thống kê</h3>
                     </div>
                 </a>
 

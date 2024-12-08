@@ -121,6 +121,7 @@ public class AuthController {
 
     public static String getSiteURL(HttpServletRequest req){
         String siteURL = req.getRequestURL().toString();
+        System.out.println("SiteURL: "+siteURL);
         return siteURL.replace(req.getServletPath(),""); //remove /forgot-password in localhost/forgotpassword
     }
 
