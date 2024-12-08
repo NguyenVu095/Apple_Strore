@@ -45,7 +45,9 @@
 <div th:fragment="header" id="wrapper__header" >
     <div class="wrap-header">
         <div class="logo">
-            <img th:src="@{/images/logologoAppleWorld.png}" alt="logo">
+            <a href="/">
+                <img th:src="@{/images/logologoAppleWorld.png}" alt="logo">
+            </a>
         </div>
         <div class="right-header">
             <div class="search-wrap">
@@ -74,7 +76,7 @@
                     <a th:href="@{/user/customer_info}" class="avatar-link"><p>Thông tin cá nhân</p></a>
                     <a th:href="@{/user/change-password}"><p>Đổi mật khẩu</p></a>
                     <form th:action="@{/logout}" method="POST" id="logout-form">
-                        <p onclick="clickLogout()">Đăng xuất</p>
+                        <p onclick="clickLogout()" style="cursor: pointer">Đăng xuất</p>
                     </form>
                 </div>
             </div>

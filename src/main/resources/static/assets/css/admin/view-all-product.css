@@ -12,6 +12,7 @@
     font-variation-settings: "slnt" 0;
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 
 input, textarea {

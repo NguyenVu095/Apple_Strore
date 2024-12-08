@@ -30,4 +30,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
     
     @Query(value = "SELECT p.name, p.color, p.storage_capacity, p.price FROM Product p", nativeQuery = true)
     List<Product> dataAllProducts();
+
+    @Query(value = "SELECT SUM(CAST(stock AS int)) AS TotalProducts FROM products", nativeQuery = true)
+    long getTotalProducts();
 }

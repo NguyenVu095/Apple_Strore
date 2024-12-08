@@ -2,17 +2,15 @@ package com.applestore.applestore.Services;
 
 
 import com.applestore.applestore.DTOs.CustomerDto;
-import com.applestore.applestore.DTOs.ProductDto;
 import com.applestore.applestore.Entities.Customer;
-import com.applestore.applestore.Entities.Product;
-import com.applestore.applestore.Repositories.CustomerRepository;
 import com.applestore.applestore.Entities.User;
-import com.applestore.applestore.Services.UserService;
+
 import java.util.ArrayList;
 
 import java.util.List;
 
 
+import com.applestore.applestore.Repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
